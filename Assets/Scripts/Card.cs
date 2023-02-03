@@ -1,43 +1,41 @@
 using System.Collections;
-//using System.Collections.Generic;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class Card : MonoBehaviour
+public class Card : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
-    private float startingX;
-    private float startingY;
-    private bool isBeingHeld = false;
+    [SerializeField]
+    private Image preview;
 
-    // Update is called once per frame
-    void Update()
+    private Vector2 startPosition;
+
+    void Start()
     {
-        if (isBeingHeld == true)
-        {
-            Vector3 mousePos;
-            mousePos = Input.mousePosition;
-            mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-            this.gameObject.transform.localPosition = new Vector3(mousePos.x, mousePos.y, 0);
-        }
-    }
-    private void OnMouseDown()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Vector3 mousePos;
-            mousePos = Input.mousePosition;
-            mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-
-            isBeingHeld = true;
-        }
-
-
-    }
-    private void OnMouseUp()
-    {
-
-        isBeingHeld = false;
+        startPosition = transform.position;
     }
 
+    public void OnBeginDrag(PointerEventData eventData)
+    {
+        preview.raycastTarget = false;
+        startPosition = transform.position;
+    }
+
+    public void OnDrag(PointerEventData eventData)
+    {
+        transform.position = eventData.position;
+    }
+
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        transform.position = startPosition;
+        preview.raycastTarget = true;
+    }
+
+    public void SetStartPosition(Vector2 newPosition)
+    {
+        startPosition = newPosition;
+    }
 }
 
