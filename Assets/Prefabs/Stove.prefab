@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 068527e89fbf35a48b056088df9c9f67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: {fileID: 0}
+  ingredient: {fileID: 0}
   index: 1
 --- !u!1 &1231757882144540912
 GameObject:
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 068527e89fbf35a48b056088df9c9f67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: {fileID: 0}
+  ingredient: {fileID: 0}
   index: 2
 --- !u!1 &2870167449865641378
 GameObject:
@@ -193,6 +193,7 @@ GameObject:
   - component: {fileID: 2870167449865641405}
   - component: {fileID: 2870167449865641406}
   - component: {fileID: 2870167449865641404}
+  - component: {fileID: 1392249557234897185}
   m_Layer: 5
   m_Name: Stove
   m_TagString: Untagged
@@ -262,6 +263,30 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1392249557234897185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2870167449865641378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9ab1814912b444cad6a402fcfbb004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientSlots:
+  - {fileID: 1144767764711721806}
+  - {fileID: 7638789199427525682}
+  - {fileID: 7375437414264503203}
+  itemList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  recipes:
+  - SteakSteaknull
+  recipeResults:
+  - {fileID: 789441053079122686, guid: 0772b4068618e6047b82a6666637b68e, type: 3}
 --- !u!1 &2870167450080051761
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,5 +511,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 068527e89fbf35a48b056088df9c9f67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: {fileID: 0}
+  ingredient: {fileID: 0}
   index: 0
