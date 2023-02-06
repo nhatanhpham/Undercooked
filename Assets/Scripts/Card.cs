@@ -6,6 +6,10 @@ using UnityEngine.UI;
 
 public class Card : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
+
+    [SerializeField]
+    private string cardName;
+
     [SerializeField]
     private Image preview;
 
@@ -36,6 +40,12 @@ public class Card : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
     public void SetStartPosition(Vector2 newPosition)
     {
         startPosition = newPosition;
+    }
+    
+
+    public string getName()
+    {
+        return cardName;
     }
 }
 

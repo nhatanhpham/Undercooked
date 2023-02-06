@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using System;
 
 public class Countertop : MonoBehaviour, IDropHandler
 {
@@ -11,6 +12,7 @@ public class Countertop : MonoBehaviour, IDropHandler
         if(card != null)
         {
             card.SetStartPosition(transform.position);
+            Console.WriteLine(card.getName());
         }
     }
 }

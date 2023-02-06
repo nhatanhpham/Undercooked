@@ -811,6 +811,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1503571393}
     m_Modifications:
+    - target: {fileID: 789441053079122686, guid: 0772b4068618e6047b82a6666637b68e, type: 3}
+      propertyPath: cardName
+      value: Steak
+      objectReference: {fileID: 0}
     - target: {fileID: 921444934073863720, guid: 0772b4068618e6047b82a6666637b68e, type: 3}
       propertyPath: m_Name
       value: Steak
@@ -1100,65 +1104,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2870167449865641405, guid: 8ed2354797330184285aa1c7175be4e1, type: 3}
   m_PrefabInstance: {fileID: 1392249557234897179}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1392249557234897181 stripped
+--- !u!114 &1392249557234897185 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7375437414264503203, guid: 8ed2354797330184285aa1c7175be4e1, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1392249557234897185, guid: 8ed2354797330184285aa1c7175be4e1, type: 3}
   m_PrefabInstance: {fileID: 1392249557234897179}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 068527e89fbf35a48b056088df9c9f67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1392249557234897182 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7638789199427525682, guid: 8ed2354797330184285aa1c7175be4e1, type: 3}
-  m_PrefabInstance: {fileID: 1392249557234897179}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 068527e89fbf35a48b056088df9c9f67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1392249557234897183 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1144767764711721806, guid: 8ed2354797330184285aa1c7175be4e1, type: 3}
-  m_PrefabInstance: {fileID: 1392249557234897179}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 068527e89fbf35a48b056088df9c9f67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1392249557234897184 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2870167449865641378, guid: 8ed2354797330184285aa1c7175be4e1, type: 3}
-  m_PrefabInstance: {fileID: 1392249557234897179}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1392249557234897185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392249557234897184}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b9ab1814912b444cad6a402fcfbb004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientSlots:
-  - {fileID: 1392249557234897183}
-  - {fileID: 1392249557234897182}
-  - {fileID: 1392249557234897181}
-  itemList:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  recipes:
-  - SteakSteaknull
-  recipeResults:
-  - {fileID: 789441053079122686, guid: 0772b4068618e6047b82a6666637b68e, type: 3}

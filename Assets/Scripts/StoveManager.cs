@@ -27,13 +27,13 @@ public class StoveManager : MonoBehaviour
         {
             itemList[i] = ingredientSlots[i].ingredient;
         }
-        itemList = itemList.OrderBy(x => x.name).ToList();
+        itemList = itemList.OrderBy(x => x.getName()).ToList();
 
         foreach(Card ingredient in itemList)
         {
             if (itemList != null)
             {
-                currentRecipe += ingredient;
+                currentRecipe += ingredient.getName();
             }
             else
             {
