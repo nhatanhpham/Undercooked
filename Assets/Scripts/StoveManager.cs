@@ -10,22 +10,23 @@ public class StoveManager : MonoBehaviour
 
     public List<Card> itemList;
     public string[] recipes;
-    public Card[] recipeResults;
+    public List<GameObject> recipeResults;
 
-    private bool successfulOutcome;
+    private GameObject recipeOutcome;
 
     public void ButtonClicked()
     {
+        Debug.Log("Button Pressed");
         CheckForCreatedRecipes();
     }
 
     void CheckForCreatedRecipes()
     {
-        successfulOutcome = false;
+        recipeOutcome = null;
         string currentRecipe = "";
         for (int i = 0; i < ingredientSlots.Length; i++)
         {
-            itemList[i] = ingredientSlots[i].ingredient;
+            itemList[i] = ingredientSlots[i].ingredient.GetComponent<Card>();
         }
         itemList = itemList.OrderBy(x => x.getName()).ToList();
 
@@ -45,11 +46,20 @@ public class StoveManager : MonoBehaviour
         {
             if (recipes[i] == currentRecipe)
             {
-                ingredientSlots[1].ingredient = recipeResults[i];
-                successfulOutcome = true;
+                recipeOutcome = recipeResults[i];
+                print("Crafted");
             }
         }
-        ingredientSlots[0].ingredient = null;
-        ingredientSlots[2].ingredient = null;
+        Destroy(ingredientSlots[0].ingredient);
+        ingredientSlots[0] = null;
+        Destroy(ingredientSlots[1].ingredient);
+        ingredientSlots[1] = null;
+        Destroy(ingredientSlots[2].ingredient);
+        ingredientSlots[2] = null;
+
+        if (recipeOutcome != null)
+        {
+            ingredientSlots[1].NewIngredient(recipeOutcome);
+        }
     }
 }

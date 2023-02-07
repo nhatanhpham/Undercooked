@@ -6,16 +6,27 @@ using System;
 
 public class IngredientSlot : MonoBehaviour, IDropHandler
 {
-    public Card ingredient;
+    public GameObject ingredient;
     public int index;
+
+    void Start()
+    {
+        ingredient = null;
+    }
 
     public void OnDrop(PointerEventData pointerEventData)
     {
-        ingredient = pointerEventData.pointerDrag.GetComponent<Card>();
+        ingredient = pointerEventData.pointerDrag;
         if (ingredient != null)
         {
-            ingredient.SetStartPosition(transform.position);
-            Console.WriteLine(ingredient.getName());
+            ingredient.GetComponent<Card>().SetStartPosition(transform.position);
+            Debug.Log(ingredient.GetComponent<Card>().getName());
         }
+    }
+
+
+    public void NewIngredient(GameObject newIngredient)
+    {
+        ingredient = GameObject.Instantiate(newIngredient, transform.position, transform.rotation);
     }
 }

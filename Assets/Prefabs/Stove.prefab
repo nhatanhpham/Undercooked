@@ -285,8 +285,10 @@ MonoBehaviour:
   - {fileID: 0}
   recipes:
   - SteakSteaknull
+  - SteakSteakSteak
   recipeResults:
-  - {fileID: 789441053079122686, guid: 0772b4068618e6047b82a6666637b68e, type: 3}
+  - {fileID: 921444934073863720, guid: 0772b4068618e6047b82a6666637b68e, type: 3}
+  - {fileID: 921444934073863720, guid: 0772b4068618e6047b82a6666637b68e, type: 3}
 --- !u!1 &2870167450080051761
 GameObject:
   m_ObjectHideFlags: 0
