@@ -6,6 +6,9 @@ using System;
 
 public class IngredientSlot : MonoBehaviour, IDropHandler
 {
+    [SerializeField]
+    public GameObject canvas;
+
     public GameObject ingredient;
     public int index;
 
@@ -27,6 +30,6 @@ public class IngredientSlot : MonoBehaviour, IDropHandler
 
     public void NewIngredient(GameObject newIngredient)
     {
-        ingredient = GameObject.Instantiate(newIngredient, transform.position, transform.rotation);
+        ingredient = GameObject.Instantiate(newIngredient, transform.position, Quaternion.identity, canvas.transform);
     }
 }

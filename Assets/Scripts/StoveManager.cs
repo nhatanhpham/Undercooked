@@ -6,10 +6,23 @@ using System.Linq;
 
 public class StoveManager : MonoBehaviour
 {
+    //These are the 3 areas that you can put ingredients in
     public IngredientSlot[] ingredientSlots;
 
+    //This is tied in with ingredientSlots (basically a list of strings of ingredient names)
     public List<string> itemList;
+
+    //Create a list of recipes
+    //Please Uppercase the first letter of each ingredient
+    //Some examples are:
+    //Steak + Steak + Steak should have the string SteakSteakSteak
+    //Banana + Banana Leaves + Banana Peel = BananaBananaLeavesBananaPeel
     public string[] recipes;
+
+    //Creates a list of results from the recipes above
+    //Drag in prefab that you want corresponding to the recipe index
+    //An example is:
+    //recipes[0] = BaconEggSausage then recipeResults[0] should have the prefab "AmericanClassicBreakfast"
     public List<GameObject> recipeResults;
 
     private GameObject recipeOutcome;
@@ -56,9 +69,10 @@ public class StoveManager : MonoBehaviour
             }
         }
 
-        /*if (recipeOutcome != null)
+        if (recipeOutcome != null)
         {
             ingredientSlots[1].NewIngredient(recipeOutcome);
-        }*/
+            print(ingredientSlots[1].ingredient.GetComponent<Card>().getName());
+        }
     }
 }

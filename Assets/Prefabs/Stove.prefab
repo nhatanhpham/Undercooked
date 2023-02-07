@@ -89,6 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 068527e89fbf35a48b056088df9c9f67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
   ingredient: {fileID: 0}
   index: 1
 --- !u!1 &1231757882144540912
@@ -180,6 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 068527e89fbf35a48b056088df9c9f67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
   ingredient: {fileID: 0}
   index: 2
 --- !u!1 &2870167449865641378
@@ -280,9 +282,9 @@ MonoBehaviour:
   - {fileID: 7638789199427525682}
   - {fileID: 7375437414264503203}
   itemList:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - 
+  - 
+  - 
   recipes:
   - SteakSteaknull
   - SteakSteakSteak
@@ -513,5 +515,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 068527e89fbf35a48b056088df9c9f67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
   ingredient: {fileID: 0}
   index: 0
