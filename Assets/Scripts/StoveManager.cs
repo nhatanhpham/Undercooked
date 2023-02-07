@@ -8,7 +8,7 @@ public class StoveManager : MonoBehaviour
 {
     public IngredientSlot[] ingredientSlots;
 
-    public List<Card> itemList;
+    public List<string> itemList;
     public string[] recipes;
     public List<GameObject> recipeResults;
 
@@ -26,20 +26,16 @@ public class StoveManager : MonoBehaviour
         string currentRecipe = "";
         for (int i = 0; i < ingredientSlots.Length; i++)
         {
-            itemList[i] = ingredientSlots[i].ingredient.GetComponent<Card>();
-        }
-        itemList = itemList.OrderBy(x => x.getName()).ToList();
-
-        foreach(Card ingredient in itemList)
-        {
-            if (itemList != null)
-            {
-                currentRecipe += ingredient.getName();
-            }
+            if (ingredientSlots[i].ingredient != null)
+            { itemList[i] = ingredientSlots[i].ingredient.GetComponent<Card>().getName(); }
             else
-            {
-                currentRecipe += "null";
-            }
+            { itemList[i] = "null"; }
+        }
+        itemList = itemList.OrderBy(x => x).ToList();
+
+        foreach(string ingredient in itemList)
+        {
+            currentRecipe += ingredient;
         }
 
         for (int i = 0; i < recipes.Length; i++)
@@ -50,16 +46,19 @@ public class StoveManager : MonoBehaviour
                 print("Crafted");
             }
         }
-        Destroy(ingredientSlots[0].ingredient);
-        ingredientSlots[0] = null;
-        Destroy(ingredientSlots[1].ingredient);
-        ingredientSlots[1] = null;
-        Destroy(ingredientSlots[2].ingredient);
-        ingredientSlots[2] = null;
 
-        if (recipeOutcome != null)
+        for (int i = 0; i < ingredientSlots.Length; i++)
+        {
+            if (ingredientSlots[i] != null)
+            {
+                Destroy(ingredientSlots[i].ingredient);
+                ingredientSlots[i].ingredient = null;
+            }
+        }
+
+        /*if (recipeOutcome != null)
         {
             ingredientSlots[1].NewIngredient(recipeOutcome);
-        }
+        }*/
     }
 }
