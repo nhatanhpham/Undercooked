@@ -16,7 +16,7 @@ public class StoveManager : MonoBehaviour
     //Please Uppercase the first letter of each ingredient
     //Some examples are:
     //Steak + Steak + Steak should have the string SteakSteakSteak
-    //Banana + Banana Leaves + Banana Peel = BananaBananaLeavesBananaPeel
+    //Banana + Banana Leaves + Banana Peel = BananaBananaleavesBananapeel
     public string[] recipes;
 
     //Creates a list of results from the recipes above
