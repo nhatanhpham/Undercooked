@@ -1110,16 +1110,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: '(Description and controls of the game can change.)
 
-
     Click and drag
-    utensil cards on top of ingredient cards to prepare them. (Drag cards to another
-    player''s part of the table to pass it on to them.) If a player''s hand is full,
-    the card will return to your hand. Place the finished dish on the counter to
-    serve your customers.
+    ingredients to the counter to prep your ingredients! For some ingredients, you
+    would have to combine them with other ingredients to place them on the stove.
+    However, be wary that doing the process out of order can ruin dishes! Place the
+    finished dish on the counter to serve your customers.
 
-
-    Customers are hungry, so don''t waste too much time
-    - be efficient, and keep your hand open before you can''t take anymore cards!'
+    Customers are hungry,
+    so don''t waste too much time - be efficient, and keep your hand open before
+    you can''t take anymore cards!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
