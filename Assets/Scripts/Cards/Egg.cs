@@ -17,13 +17,9 @@ public class Egg : Ingredient
     // Start is called before the first frame update
     void Start()
     {
+        cuttable = false;
+        cookable = true;
         currentEvolution = EVOLUTION.Raw;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     public override void Evolve()
@@ -32,6 +28,8 @@ public class Egg : Ingredient
         {
             currentEvolution = EVOLUTION.Cooked;
             preview.sprite = cookedSprite;
+            cookable = false;
+            platable = true;
         }
     }
 

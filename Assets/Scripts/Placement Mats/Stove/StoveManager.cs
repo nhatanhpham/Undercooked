@@ -8,7 +8,7 @@ public class StoveManager : MonoBehaviour
 {
     //These are the 3 areas that you can put ingredients in
     [SerializeField]
-    private List<Countertop> ingredientSlots;
+    private List<Stove> ingredientSlots;
     [SerializeField]
     private GameObject canvas;
 
@@ -27,8 +27,15 @@ public class StoveManager : MonoBehaviour
             }
         }
 
-        Sprite cookedDish = RecipeManager.GetInstance().CheckRecipeMatch(ingredients);
-        CombineIngredients(cookedDish);
+        if(RecipeManager.GetInstance().CheckRecipeMatch(ingredients))
+        {
+            CombineIngredients();
+        }
+        else
+        {
+            indexNotNull = -1;
+        }
+        ClearIngredientSlots(indexNotNull);
         ResetValues();
     }
 
@@ -44,13 +51,9 @@ public class StoveManager : MonoBehaviour
         }
     }
 
-    private void CombineIngredients(Sprite cookedDish)
+    private void CombineIngredients()
     {
-        if(cookedDish != null)
-        {
-            ingredientSlots[indexNotNull].GetIngredient().SetPreviewSprite(cookedDish);
-        }
-        ClearIngredientSlots(indexNotNull);
+        ingredientSlots[indexNotNull].GetIngredient().Evolve();
     }
 
     private void ClearIngredientSlots(int save)

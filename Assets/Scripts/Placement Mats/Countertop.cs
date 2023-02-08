@@ -7,7 +7,7 @@ using System;
 public class Countertop : MonoBehaviour, IDropHandler
 {
     protected Ingredient ingredient = null;
-    public void OnDrop(PointerEventData pointerEventData)
+    public virtual void OnDrop(PointerEventData pointerEventData)
     {
         Card card = pointerEventData.pointerDrag.GetComponent<Card>();
         if(card != null)

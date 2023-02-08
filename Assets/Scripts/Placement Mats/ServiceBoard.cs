@@ -7,7 +7,7 @@ public class ServiceBoard : Countertop
 {
     public void Serve()
     {
-        if(ingredient != null)
+        if(ingredient != null && ingredient.IsPlated())
         {
             RecipeManager.GetInstance().CheckOrderMatch(ingredient.GetCurrentImage());
             DestroyIngredient();

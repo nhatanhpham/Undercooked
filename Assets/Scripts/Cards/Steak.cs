@@ -7,7 +7,7 @@ public class Steak : Ingredient
 {
     private enum EVOLUTION
     {
-        Raw, Chopped, Cooked
+        Raw, Cut, Cooked
     }
     private EVOLUTION currentEvolution;
 
@@ -19,26 +19,26 @@ public class Steak : Ingredient
     // Start is called before the first frame update
     void Start()
     {
+        cookable = false;
+        cuttable = true;
         currentEvolution = EVOLUTION.Raw;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-            
     }
 
     public override void Evolve()
     {
         if(currentEvolution == EVOLUTION.Raw)
         {
-            currentEvolution = EVOLUTION.Chopped;
+            currentEvolution = EVOLUTION.Cut;
             preview.sprite = choppedSprite;
+            cuttable = false;
+            cookable = true;
         }
-        else if(currentEvolution == EVOLUTION.Chopped)
+        else if(currentEvolution == EVOLUTION.Cut)
         {
             currentEvolution = EVOLUTION.Cooked;
             preview.sprite = cookedSprite;
+            cookable = false;
+            platable = true;
         }
     }
 

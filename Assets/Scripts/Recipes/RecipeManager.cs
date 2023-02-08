@@ -100,18 +100,16 @@ public class RecipeManager : MonoBehaviour
         ordersRecipes.Remove(orderToRemove);
     }
 
-    public Sprite CheckRecipeMatch(Dictionary<string, int> combinedIngredients)
+    public bool CheckRecipeMatch(Dictionary<string, int> combinedIngredients)
     {
-        Sprite cookedDish = null;
         foreach(Recipe recipe in recipes)
         {
             if(recipe.CheckMatch(combinedIngredients))
             {
-                cookedDish = recipe.GetFinishedDish();
-                break;
+                return true;
             }
         }
-        return cookedDish;
+        return false;
     }
 
     private void RemoveOrder(GameObject order)

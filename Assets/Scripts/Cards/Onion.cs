@@ -7,23 +7,21 @@ public class Onion : Ingredient
 {
     private enum EVOLUTION
     {
-        Raw, Cut
+        Raw, Cut, Cooked
     }
     private EVOLUTION currentEvolution;
 
     [SerializeField]
     private Sprite cutSprite;
+    [SerializeField]
+    private Sprite cookedSprite;
 
     // Start is called before the first frame update
     void Start()
     {
+        cookable = false;
+        cuttable = true;
         currentEvolution = EVOLUTION.Raw;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     public override void Evolve()
@@ -32,6 +30,15 @@ public class Onion : Ingredient
         {
             currentEvolution = EVOLUTION.Cut;
             preview.sprite = cutSprite;
+            cuttable = false;
+            cookable = true;
+        }
+        else if(currentEvolution == EVOLUTION.Cut)
+        {
+            currentEvolution = EVOLUTION.Cooked;
+            preview.sprite = cookedSprite;
+            cookable = false;
+            platable = true;
         }
     }
 

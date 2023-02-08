@@ -6,6 +6,9 @@ public class CuttingBoard : Countertop
 {
     public void Cut()
     {
-        ingredient.Evolve();
+        if(ingredient.IsCuttable())
+        {
+            ingredient.Evolve();
+        }
     }
 }

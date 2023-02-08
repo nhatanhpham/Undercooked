@@ -1435,7 +1435,7 @@ PrefabInstance:
       objectReference: {fileID: 1503571389}
     - target: {fileID: 2870167449865641378, guid: 8ed2354797330184285aa1c7175be4e1, type: 3}
       propertyPath: m_Name
-      value: Stove
+      value: Stove Manager
       objectReference: {fileID: 0}
     - target: {fileID: 2870167449865641405, guid: 8ed2354797330184285aa1c7175be4e1, type: 3}
       propertyPath: m_Pivot.x

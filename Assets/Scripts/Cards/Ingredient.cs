@@ -10,8 +10,17 @@ public abstract class Ingredient : MonoBehaviour
     [SerializeField]
     protected string ingredientName;
 
+    protected bool plated = false;
+    protected bool platable = false;
+    protected bool cookable;
+    protected bool cuttable;
+
     public Sprite GetCurrentImage() {return preview.sprite;}
     public string GetIngredientName() { return ingredientName; }
+    public bool IsPlated() { return plated; }
+    public bool IsPlatable() { return platable;}
+    public bool IsCookable() { return cookable;}
+    public bool IsCuttable() { return cuttable;}
     public void SetPreviewSprite(Sprite newSprite) { preview.sprite = newSprite;}
 
     /*

@@ -191,6 +191,7 @@ MonoBehaviour:
   preview: {fileID: 4446381460488492589}
   ingredientName: Onion
   cutSprite: {fileID: 21300000, guid: 8bf3c737f7f750d4f99807f81f7da7d3, type: 3}
+  cookedSprite: {fileID: 21300000, guid: 6846802475f49bd4088f297c903aac13, type: 3}
 --- !u!114 &4446381460488492589 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3238573208072647947, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
