@@ -50,9 +50,10 @@ public class RecipeManager : MonoBehaviour
 
     private void Start()
     {
-        AddOrder();
-        AddOrder();
-        AddOrder();
+        for(int i = 0; i < 5; i++)
+        {
+            AddOrder();
+        }
     }
 
     private void Update()
@@ -95,8 +96,8 @@ public class RecipeManager : MonoBehaviour
                 GameStateManager.GetInstance().UpdateMoney(recipe.GetMaxProfit());
                 break;
             }
-            ordersRecipes.Remove(orderToRemove);
         }
+        ordersRecipes.Remove(orderToRemove);
     }
 
     public Sprite CheckRecipeMatch(Dictionary<string, int> combinedIngredients)
@@ -115,9 +116,10 @@ public class RecipeManager : MonoBehaviour
 
     private void RemoveOrder(GameObject order)
     {
+        orders.Remove(order);
         Destroy(order);
         ResetOffset();
-        for(int i = 1; i < orders.Count; i++)
+        for(int i = 0; i < orders.Count; i++)
         {
             orders[i].transform.position = GetSpawnPosition();
             IncrementOffset();

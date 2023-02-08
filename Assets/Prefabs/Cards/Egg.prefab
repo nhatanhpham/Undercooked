@@ -39,6 +39,14 @@ PrefabInstance:
       propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3818973948650518098, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3818973948650518098, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.7
+      objectReference: {fileID: 0}
     - target: {fileID: 3914712466318460036, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
       propertyPath: m_text
       value: Egg
@@ -141,6 +149,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6647920381598080716, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6884910521273564646, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7689574200472036967, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}

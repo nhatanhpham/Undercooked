@@ -7,7 +7,10 @@ public class ServiceBoard : Countertop
 {
     public void Serve()
     {
-        RecipeManager.GetInstance().CheckOrderMatch(ingredient.GetCurrentImage());
-        DestroyIngredient();
+        if(ingredient != null)
+        {
+            RecipeManager.GetInstance().CheckOrderMatch(ingredient.GetCurrentImage());
+            DestroyIngredient();
+        }
     }
 }

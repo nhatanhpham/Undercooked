@@ -24,6 +24,7 @@ public class Countertop : MonoBehaviour, IDropHandler
         if(ingredient != null)
         {
             Destroy(ingredient.gameObject);
+            ingredient = null;
         }
     }
 }

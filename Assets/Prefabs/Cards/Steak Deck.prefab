@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2896065121643327417
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3418017584853172215, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: ingredient
+      value: 
+      objectReference: {fileID: 921444934073863720, guid: 0772b4068618e6047b82a6666637b68e, type: 3}
+    - target: {fileID: 3764874916509985924, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388587511368, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_Name
+      value: Steak Deck
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388587511369, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388587511369, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388587511369, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388587511369, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388587511369, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388587511369, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388587511369, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388587511369, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388587511369, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388587511369, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388587511369, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388587511369, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388587511369, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388587511369, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388587511369, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388587511369, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388587511369, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -249
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388587511369, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -129
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388587511369, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388587511369, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388587511369, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388663056117, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388663056117, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388663056117, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388663056117, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301388663056118, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7fbac880f66000d43a6b63194d8cc0fa, type: 3}
+    - target: {fileID: 5574301388663056118, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574301389706473508, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+      propertyPath: m_text
+      value: Steaks
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}

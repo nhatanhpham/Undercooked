@@ -9,7 +9,7 @@ public class Card : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
     [SerializeField]
     private Image preview;
 
-    private Vector2 startPosition;
+    private Vector3 startPosition;
 
     void Start()
     {
