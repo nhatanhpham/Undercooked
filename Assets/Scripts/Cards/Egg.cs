@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Egg : MonoBehaviour, Ingredient
+public class Egg : Ingredient
 {
     private enum EVOLUTION
     {
@@ -12,9 +12,7 @@ public class Egg : MonoBehaviour, Ingredient
     private EVOLUTION currentEvolution;
 
     [SerializeField]
-    private Image preview;
-    [SerializeField]
-    private Sprite cookedSprite;
+    private Sprite cookedSprite; 
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +26,7 @@ public class Egg : MonoBehaviour, Ingredient
 
     }
 
-    public void Evolve()
+    public override void Evolve()
     {
         if (currentEvolution == EVOLUTION.Raw)
         {
@@ -37,7 +35,7 @@ public class Egg : MonoBehaviour, Ingredient
         }
     }
 
-    public void Combine(Ingredient toCombine)
+    public override void Combine(Ingredient toCombine)
     {
 
     }

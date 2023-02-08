@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Onion : MonoBehaviour, Ingredient
+public class Onion : Ingredient
 {
     private enum EVOLUTION
     {
@@ -11,8 +11,6 @@ public class Onion : MonoBehaviour, Ingredient
     }
     private EVOLUTION currentEvolution;
 
-    [SerializeField]
-    private Image preview;
     [SerializeField]
     private Sprite cutSprite;
 
@@ -28,7 +26,7 @@ public class Onion : MonoBehaviour, Ingredient
 
     }
 
-    public void Evolve()
+    public override void Evolve()
     {
         if (currentEvolution == EVOLUTION.Raw)
         {
@@ -37,7 +35,7 @@ public class Onion : MonoBehaviour, Ingredient
         }
     }
 
-    public void Combine(Ingredient toCombine)
+    public override void Combine(Ingredient toCombine)
     {
 
     }

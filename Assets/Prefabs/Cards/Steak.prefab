@@ -7,25 +7,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1270144309644579971, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
-      propertyPath: m_Color.b
-      value: 0.3944464
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270144309644579971, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
-      propertyPath: m_Color.g
-      value: 0.754717
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270144309644579971, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
-      propertyPath: m_Color.r
-      value: 0.40882903
-      objectReference: {fileID: 0}
     - target: {fileID: 1995562174024307160, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
       propertyPath: cardName
-      value: Onion
+      value: Steak
       objectReference: {fileID: 0}
     - target: {fileID: 2129252667066068238, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
       propertyPath: m_Name
-      value: Onion
+      value: Steak
       objectReference: {fileID: 0}
     - target: {fileID: 3238573208072647947, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
       propertyPath: m_Type
@@ -34,16 +22,14 @@ PrefabInstance:
     - target: {fileID: 3238573208072647947, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 8843350218b827440b2ac7e7aab7e0b0, type: 3}
+      objectReference: {fileID: 21300000, guid: 7fbac880f66000d43a6b63194d8cc0fa, type: 3}
     - target: {fileID: 3238573208072647947, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
       propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3914712466318460036, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
       propertyPath: m_text
-      value: 'Onion
-
-'
+      value: Steak
       objectReference: {fileID: 0}
     - target: {fileID: 6315404043926551874, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
       propertyPath: m_Size.x
@@ -127,11 +113,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6647920381598080716, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -247
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6647920381598080716, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 81
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6647920381598080716, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -176,7 +162,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2129252667066068238, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
   m_PrefabInstance: {fileID: 1244402306255479590}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7008000111230235071
+--- !u!114 &7507914253864379141
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -185,8 +171,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 921444934073863720}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebad101fd5bf5bd43acbb3eb83ca2d3f, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a94b406a29d7ff44b68c2b40d2a489c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  preview: {fileID: 0}
-  cutSprite: {fileID: 21300000, guid: 8bf3c737f7f750d4f99807f81f7da7d3, type: 3}
+  preview: {fileID: 4446381460488492589}
+  choppedSprite: {fileID: 21300000, guid: 1228ae1eece179d4091329a05834518d, type: 3}
+  cookedSprite: {fileID: 21300000, guid: 24dfb02d2506b6a4dac8878f73a5c998, type: 3}
+--- !u!114 &4446381460488492589 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3238573208072647947, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
+  m_PrefabInstance: {fileID: 1244402306255479590}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Steak : MonoBehaviour, Ingredient
+public class Steak : Ingredient
 {
     private enum EVOLUTION
     {
@@ -11,8 +11,6 @@ public class Steak : MonoBehaviour, Ingredient
     }
     private EVOLUTION currentEvolution;
 
-    [SerializeField]
-    private Image preview;
     [SerializeField]
     private Sprite choppedSprite;
     [SerializeField]
@@ -30,7 +28,7 @@ public class Steak : MonoBehaviour, Ingredient
             
     }
 
-    public void Evolve()
+    public override void Evolve()
     {
         if(currentEvolution == EVOLUTION.Raw)
         {
@@ -44,7 +42,7 @@ public class Steak : MonoBehaviour, Ingredient
         }
     }
 
-    public void Combine(Ingredient toCombine)
+    public override void Combine(Ingredient toCombine)
     {
 
     }
