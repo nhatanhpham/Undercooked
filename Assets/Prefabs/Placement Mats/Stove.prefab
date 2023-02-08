@@ -124,7 +124,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1392249557234897185}
         m_TargetAssemblyTypeName: StoveManager, Assembly-CSharp
-        m_MethodName: ButtonClicked
+        m_MethodName: CheckForCreatedRecipes
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 6950581499079517687}
   - component: {fileID: 4874508309586678149}
   - component: {fileID: 8992711501199602628}
-  - component: {fileID: 7638789199427525682}
+  - component: {fileID: 2077793752}
   m_Layer: 5
   m_Name: Ingredient2
   m_TagString: Untagged
@@ -346,7 +346,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7638789199427525682
+--- !u!114 &2077793752
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -355,12 +355,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1026763995563975027}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 068527e89fbf35a48b056088df9c9f67, type: 3}
+  m_Script: {fileID: 11500000, guid: a03a2ef0ddeb449439b346a987bdfa2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
-  ingredient: {fileID: 0}
-  index: 1
 --- !u!1 &1231757882144540912
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,7 +369,7 @@ GameObject:
   - component: {fileID: 9154189050614866927}
   - component: {fileID: 1858013621973480074}
   - component: {fileID: 3100708544586995562}
-  - component: {fileID: 7375437414264503203}
+  - component: {fileID: 1537604871}
   m_Layer: 5
   m_Name: Ingredient3
   m_TagString: Untagged
@@ -438,7 +435,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7375437414264503203
+--- !u!114 &1537604871
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -447,12 +444,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1231757882144540912}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 068527e89fbf35a48b056088df9c9f67, type: 3}
+  m_Script: {fileID: 11500000, guid: a03a2ef0ddeb449439b346a987bdfa2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
-  ingredient: {fileID: 0}
-  index: 2
 --- !u!1 &2870167449865641378
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,19 +542,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientSlots:
-  - {fileID: 1144767764711721806}
-  - {fileID: 7638789199427525682}
-  - {fileID: 7375437414264503203}
-  itemList:
-  - 
-  - 
-  - 
-  recipes:
-  - SteakSteaknull
-  - SteakSteakSteak
-  recipeResults:
-  - {fileID: 921444934073863720, guid: 0772b4068618e6047b82a6666637b68e, type: 3}
-  - {fileID: 921444934073863720, guid: 0772b4068618e6047b82a6666637b68e, type: 3}
+  - {fileID: 56549715}
+  - {fileID: 2077793752}
+  - {fileID: 1537604871}
+  canvas: {fileID: 0}
 --- !u!1 &2870167450080051761
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,7 +692,7 @@ GameObject:
   - component: {fileID: 6169863474058485028}
   - component: {fileID: 966699740812394019}
   - component: {fileID: 8372456862751462007}
-  - component: {fileID: 1144767764711721806}
+  - component: {fileID: 56549715}
   m_Layer: 5
   m_Name: Ingredient1
   m_TagString: Untagged
@@ -773,7 +758,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1144767764711721806
+--- !u!114 &56549715
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -782,9 +767,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 4578821470691265086}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 068527e89fbf35a48b056088df9c9f67, type: 3}
+  m_Script: {fileID: 11500000, guid: a03a2ef0ddeb449439b346a987bdfa2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
-  ingredient: {fileID: 0}
-  index: 0

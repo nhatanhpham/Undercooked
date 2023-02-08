@@ -7,10 +7,12 @@ public abstract class Ingredient : MonoBehaviour
 {
     [SerializeField]
     protected Image preview;
-    public Sprite GetCurrentImage()
-    {
-        return preview.sprite;
-    }
+    [SerializeField]
+    protected string ingredientName;
+
+    public Sprite GetCurrentImage() {return preview.sprite;}
+    public string GetIngredientName() { return ingredientName; }
+    public void SetPreviewSprite(Sprite newSprite) { preview.sprite = newSprite;}
 
     /*
     Evolve pertains to the stages the ingredient goes through.

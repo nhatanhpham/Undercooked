@@ -6,7 +6,7 @@ using System;
 
 public class Countertop : MonoBehaviour, IDropHandler
 {
-    protected Ingredient ingredient;
+    protected Ingredient ingredient = null;
     public void OnDrop(PointerEventData pointerEventData)
     {
         Card card = pointerEventData.pointerDrag.GetComponent<Card>();
@@ -14,6 +14,16 @@ public class Countertop : MonoBehaviour, IDropHandler
         {
             card.SetStartPosition(transform.position);
             ingredient = pointerEventData.pointerDrag.GetComponent<Ingredient>();
+        }
+    }
+
+    public Ingredient GetIngredient() { return ingredient; }
+
+    public void DestroyIngredient() 
+    {
+        if(ingredient != null)
+        {
+            Destroy(ingredient.gameObject);
         }
     }
 }

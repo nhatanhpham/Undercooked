@@ -8,6 +8,6 @@ public class ServiceBoard : Countertop
     public void Serve()
     {
         RecipeManager.GetInstance().CheckOrderMatch(ingredient.GetCurrentImage());
-        Destroy(ingredient.gameObject);
+        DestroyIngredient();
     }
 }
