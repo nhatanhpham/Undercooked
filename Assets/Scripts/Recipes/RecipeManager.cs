@@ -9,7 +9,6 @@ public class RecipeManager : MonoBehaviour
 {
     private static RecipeManager _instance;
 
-    [SerializeField]
     private List<Recipe> recipes;
     private List<Recipe> ordersRecipes = new();
     private List<GameObject> orders = new();
@@ -17,13 +16,8 @@ public class RecipeManager : MonoBehaviour
     [SerializeField]
     private GameObject ordersCanvas;
     [SerializeField]
-    private RectTransform rectOrdersCanvas;
-    [SerializeField]
-    private RectTransform rectOrder;
-    [SerializeField]
-    private float whitespaceOffset;
-    private Vector3 orderSpawnOffset = Vector3.zero;
-    private float startingSpawn;
+    private List<GameObject> orderSlots;
+    private int currentSlot;
 
     private void Awake()
     {
@@ -31,8 +25,6 @@ public class RecipeManager : MonoBehaviour
         {
             _instance = this;
             recipes = Resources.LoadAll<Recipe>("Recipes").ToList();
-            startingSpawn = -rectOrdersCanvas.rect.width / 2 + rectOrder.rect.width / 2;
-            orderSpawnOffset.x += startingSpawn;
             DontDestroyOnLoad(_instance);
         }
         else
@@ -60,7 +52,7 @@ public class RecipeManager : MonoBehaviour
 
     public void AddOrder()
     {
-        Recipe randomRecipe = recipes[Random.Range(0, recipes.Count())];
+        Recipe randomRecipe = recipes[Random.Range(0, recipes.Count)];
         ordersRecipes.Add(randomRecipe);
         orders.Add(Instantiate(randomRecipe.GetOrder(), GetSpawnPosition(), Quaternion.identity, ordersCanvas.transform));
         IncrementOffset();
@@ -68,17 +60,17 @@ public class RecipeManager : MonoBehaviour
 
     private Vector3 GetSpawnPosition()
     {
-        return ordersCanvas.transform.position + orderSpawnOffset;
+        return orderSlots[currentSlot].transform.position;
     }
 
     private void ResetOffset()
     {
-        orderSpawnOffset.x = startingSpawn;
+        currentSlot = 0;
     }
 
     private void IncrementOffset()
     {
-        orderSpawnOffset.x += rectOrder.rect.width + whitespaceOffset;
+        currentSlot++;
     }
 
     public void CheckOrderMatch(Sprite potentialOrder)
