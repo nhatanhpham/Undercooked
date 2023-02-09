@@ -822,26 +822,6 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 975185895}
-    - target: {fileID: 7307941924912586653, guid: d07edde364abb6449badd6119ef144f7, type: 3}
-      propertyPath: m_fontStyle
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7307941924912586653, guid: d07edde364abb6449badd6119ef144f7, type: 3}
-      propertyPath: m_fontColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7307941924912586653, guid: d07edde364abb6449badd6119ef144f7, type: 3}
-      propertyPath: m_fontColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7307941924912586653, guid: d07edde364abb6449badd6119ef144f7, type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7307941924912586653, guid: d07edde364abb6449badd6119ef144f7, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 7307941926031540720, guid: d07edde364abb6449badd6119ef144f7, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -929,14 +909,6 @@ PrefabInstance:
     - target: {fileID: 7307941926031540721, guid: d07edde364abb6449badd6119ef144f7, type: 3}
       propertyPath: m_Name
       value: Steak Deck
-      objectReference: {fileID: 0}
-    - target: {fileID: 7307941926031540723, guid: d07edde364abb6449badd6119ef144f7, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: a0c1af5cb51282747ae9c6ca6bc0b715, type: 3}
-    - target: {fileID: 7307941926031540723, guid: d07edde364abb6449badd6119ef144f7, type: 3}
-      propertyPath: m_Color.a
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d07edde364abb6449badd6119ef144f7, type: 3}
@@ -1054,26 +1026,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1503571393}
     m_Modifications:
-    - target: {fileID: 4195279149614945141, guid: 6242c32ca74fe0b4ea44ee234a566bd3, type: 3}
-      propertyPath: m_fontStyle
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4195279149614945141, guid: 6242c32ca74fe0b4ea44ee234a566bd3, type: 3}
-      propertyPath: m_fontColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4195279149614945141, guid: 6242c32ca74fe0b4ea44ee234a566bd3, type: 3}
-      propertyPath: m_fontColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4195279149614945141, guid: 6242c32ca74fe0b4ea44ee234a566bd3, type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4195279149614945141, guid: 6242c32ca74fe0b4ea44ee234a566bd3, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 4195279150643465496, guid: 6242c32ca74fe0b4ea44ee234a566bd3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1161,22 +1113,6 @@ PrefabInstance:
     - target: {fileID: 4195279150643465497, guid: 6242c32ca74fe0b4ea44ee234a566bd3, type: 3}
       propertyPath: m_Name
       value: Onion Deck
-      objectReference: {fileID: 0}
-    - target: {fileID: 4195279150643465499, guid: 6242c32ca74fe0b4ea44ee234a566bd3, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: a0c1af5cb51282747ae9c6ca6bc0b715, type: 3}
-    - target: {fileID: 4195279150643465499, guid: 6242c32ca74fe0b4ea44ee234a566bd3, type: 3}
-      propertyPath: m_Color.b
-      value: 0.56037736
-      objectReference: {fileID: 0}
-    - target: {fileID: 4195279150643465499, guid: 6242c32ca74fe0b4ea44ee234a566bd3, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4195279150643465499, guid: 6242c32ca74fe0b4ea44ee234a566bd3, type: 3}
-      propertyPath: m_Color.r
-      value: 0.5753644
       objectReference: {fileID: 0}
     - target: {fileID: 6344579421960887462, guid: 6242c32ca74fe0b4ea44ee234a566bd3, type: 3}
       propertyPath: canvas
@@ -1555,42 +1491,6 @@ PrefabInstance:
     - target: {fileID: 8145328329370635445, guid: 24c1ba3b4fee4d548bece8e870a8eed0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8145328329370635446, guid: 24c1ba3b4fee4d548bece8e870a8eed0, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: a0c1af5cb51282747ae9c6ca6bc0b715, type: 3}
-    - target: {fileID: 8145328329370635446, guid: 24c1ba3b4fee4d548bece8e870a8eed0, type: 3}
-      propertyPath: m_Color.b
-      value: 0.60784316
-      objectReference: {fileID: 0}
-    - target: {fileID: 8145328329370635446, guid: 24c1ba3b4fee4d548bece8e870a8eed0, type: 3}
-      propertyPath: m_Color.g
-      value: 0.6599135
-      objectReference: {fileID: 0}
-    - target: {fileID: 8145328329370635446, guid: 24c1ba3b4fee4d548bece8e870a8eed0, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8145328330506375896, guid: 24c1ba3b4fee4d548bece8e870a8eed0, type: 3}
-      propertyPath: m_fontStyle
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8145328330506375896, guid: 24c1ba3b4fee4d548bece8e870a8eed0, type: 3}
-      propertyPath: m_fontColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8145328330506375896, guid: 24c1ba3b4fee4d548bece8e870a8eed0, type: 3}
-      propertyPath: m_fontColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8145328330506375896, guid: 24c1ba3b4fee4d548bece8e870a8eed0, type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8145328330506375896, guid: 24c1ba3b4fee4d548bece8e870a8eed0, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24c1ba3b4fee4d548bece8e870a8eed0, type: 3}
