@@ -13,7 +13,7 @@ public class Countertop : MonoBehaviour, IDropHandler
         if(card != null)
         {
             card.SetStartPosition(transform.position);
-            ingredient = pointerEventData.pointerDrag.GetComponent<Ingredient>();
+            ingredient = card.GetIngredient();
         }
     }
 

@@ -23,6 +23,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.56037736
       objectReference: {fileID: 0}
+    - target: {fileID: 1995562174024307160, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
+      propertyPath: ingredient
+      value: 
+      objectReference: {fileID: 7396968858218264061}
     - target: {fileID: 2129252667066068238, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
       propertyPath: m_Name
       value: Plate

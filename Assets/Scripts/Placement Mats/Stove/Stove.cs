@@ -13,11 +13,7 @@ public class Stove : Countertop
             return;
         }
 
-        Ingredient newIngredient = pointerEventData.pointerDrag.GetComponent<Ingredient>();
-        if(newIngredient == null)
-        {
-            return;
-        }
+        Ingredient newIngredient = card.GetIngredient();
 
         if(newIngredient.IsCookable())
         {

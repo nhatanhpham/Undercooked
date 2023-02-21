@@ -31,6 +31,10 @@ PrefabInstance:
       propertyPath: cardName
       value: Steak
       objectReference: {fileID: 0}
+    - target: {fileID: 1995562174024307160, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
+      propertyPath: ingredient
+      value: 
+      objectReference: {fileID: 7507914253864379141}
     - target: {fileID: 2129252667066068238, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
       propertyPath: m_Name
       value: Steak

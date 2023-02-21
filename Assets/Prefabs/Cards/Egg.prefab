@@ -31,6 +31,10 @@ PrefabInstance:
       propertyPath: cardName
       value: Egg
       objectReference: {fileID: 0}
+    - target: {fileID: 1995562174024307160, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
+      propertyPath: ingredient
+      value: 
+      objectReference: {fileID: 5323812282377347081}
     - target: {fileID: 2129252667066068238, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
       propertyPath: m_Name
       value: Egg
