@@ -12,7 +12,7 @@ public class Card : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
 
     private Vector3 startPosition;
 
-    void Start()
+    void Awake()
     {
         startPosition = transform.position;
     }
