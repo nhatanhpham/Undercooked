@@ -13,8 +13,7 @@ public class Deck : MonoBehaviour, IBeginDragHandler, IDragHandler
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        GameObject newIngredient = Instantiate(ingredient, transform.position, Quaternion.identity);
-        newIngredient.transform.SetParent(canvas.transform, false);
+        GameObject newIngredient = Instantiate(ingredient, transform.position, Quaternion.identity, canvas.transform);
         eventData.pointerDrag = newIngredient;
     }
 
