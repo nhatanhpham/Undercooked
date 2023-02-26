@@ -1,11 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Trash : Countertop
 {
-    private void Update()
+    public override void OnDrop(PointerEventData pointerEventData)
     {
-        DestroyIngredient();
+        Card card = pointerEventData.pointerDrag.GetComponent<Card>();
+        if(card != null && !card.GetIngredient().GetIngredientName().Equals("Plate"))
+        {
+            Destroy(card.gameObject);
+        }
     }
 }

@@ -12,6 +12,7 @@ public class Card : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
     [SerializeField]
     private Ingredient ingredient;
 
+    private Countertop countertop;
     private Vector3 startPosition;
 
     void Awake()
@@ -39,15 +40,21 @@ public class Card : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
 
     public void OnDrop(PointerEventData eventData)
     {
-        if (eventData.pointerDrag.TryGetComponent(out Card toCombine))
+        if (eventData.pointerDrag.TryGetComponent(out Ingredient toCombine))
         {
             ingredient.Combine(toCombine);
         }
     }
 
-    public void SetStartPosition(Vector2 newPosition)
+    public void SetCountertop(Countertop countertop)
     {
-        startPosition = newPosition;
+        this.countertop = countertop;
+        startPosition = countertop.transform.position;
+    }
+
+    public Countertop GetCountertop()
+    {
+        return countertop;
     }
 
     public Ingredient GetIngredient()

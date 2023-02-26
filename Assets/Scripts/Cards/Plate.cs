@@ -5,26 +5,48 @@ using UnityEngine;
 
 public class Plate : Ingredient
 {
+    private enum EVOLUTION
+    {
+        Clean, Dirty
+    }
+    private EVOLUTION currentEvolution;
+
+    [SerializeField]
+    private Sprite cleanSprite;
+    [SerializeField]
+    private Sprite dirtySprite;
     // Start is called before the first frame update
     void Start()
     {
         platable = true;
         cookable = false;
         cuttable = false;
+        currentEvolution = EVOLUTION.Clean;
     }
 
     public override void Evolve()
     {
-
+        if(currentEvolution == EVOLUTION.Clean)
+        {
+            currentEvolution = EVOLUTION.Dirty;
+            preview.sprite = dirtySprite;
+            platable = false;
+        }
+        else if(currentEvolution == EVOLUTION.Dirty)
+        {
+            currentEvolution = EVOLUTION.Clean;
+            preview.sprite = cleanSprite;
+            platable = true;
+        }
     }
 
-    public override void Combine(Card toCombine)
+    public override void Combine(Ingredient toCombine)
     {
-        Ingredient ingToCombine = toCombine.GetIngredient();
-        if(ingToCombine.IsPlatable())
+        if(!toCombine.GetIngredientName().Equals("Plate") && toCombine.IsPlatable() && IsPlatable())
         {
-            ingToCombine.PlateIng();
-            toCombine.SetStartPosition(transform.position);
+            toCombine.PlateIng();
+            toCombine.GetCard().SetCountertop(card.GetCountertop());
+            card.GetCountertop().SetIngredient(toCombine);
             Destroy(gameObject);
         }
     }

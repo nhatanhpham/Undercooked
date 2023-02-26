@@ -11,12 +11,15 @@ public abstract class Ingredient : MonoBehaviour
     protected GameObject platePreview;
     [SerializeField]
     protected string ingredientName;
+    [SerializeField]
+    protected Card card;
 
     protected bool plated = false;
     protected bool platable = false;
     protected bool cookable;
     protected bool cuttable;
 
+    public Card GetCard() { return card; }
     public Sprite GetCurrentImage() {return preview.sprite;}
     public string GetIngredientName() { return ingredientName; }
     public bool IsPlated() { return plated; }
@@ -32,13 +35,12 @@ public abstract class Ingredient : MonoBehaviour
     public abstract void Evolve();
 
     //Combine combines cards together, including plates
-    public virtual void Combine(Card toCombine)
+    public virtual void Combine(Ingredient toCombine)
     {
-        Ingredient ingToCombine = toCombine.GetIngredient();
-        if(ingToCombine.GetIngredientName().Equals("Plate") && IsPlatable())
+        if(toCombine.GetIngredientName().Equals("Plate") && toCombine.IsPlatable() && IsPlatable())
         {
             PlateIng();
-            ingToCombine.PlateIng();
+            toCombine.PlateIng();
         }
     }
 

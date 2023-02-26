@@ -201,6 +201,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
+--- !u!114 &789441053079122686 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1995562174024307160, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
+  m_PrefabInstance: {fileID: 1244402306255479590}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921444934073863720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c0fa0bb7ebdeba4690ce4c983d75f65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &921444934073863720 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2129252667066068238, guid: ba7e6b8ea3b76d043b644a3631c8b46b, type: 3}
@@ -221,6 +232,7 @@ MonoBehaviour:
   preview: {fileID: 4446381460488492589}
   platePreview: {fileID: 5677100595632463552}
   ingredientName: Steak
+  card: {fileID: 789441053079122686}
   choppedSprite: {fileID: 21300000, guid: 1228ae1eece179d4091329a05834518d, type: 3}
   cookedSprite: {fileID: 21300000, guid: 24dfb02d2506b6a4dac8878f73a5c998, type: 3}
 --- !u!114 &4446381460488492589 stripped

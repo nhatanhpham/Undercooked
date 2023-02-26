@@ -17,8 +17,8 @@ public class Stove : Countertop
 
         if(newIngredient.IsCookable())
         {
-            card.SetStartPosition(transform.position);
-            ingredient = newIngredient;
+            card.SetCountertop(this);
+            SetIngredient(newIngredient);
         }
     } 
 }
