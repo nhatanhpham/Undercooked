@@ -41,9 +41,4 @@ public class Onion : Ingredient
             platable = true;
         }
     }
-
-    public override void Combine(Ingredient toCombine)
-    {
-
-    }
 }

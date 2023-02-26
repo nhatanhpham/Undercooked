@@ -41,9 +41,4 @@ public class Steak : Ingredient
             platable = true;
         }
     }
-
-    public override void Combine(Ingredient toCombine)
-    {
-
-    }
 }

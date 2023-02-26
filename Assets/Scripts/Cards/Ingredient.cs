@@ -8,6 +8,8 @@ public abstract class Ingredient : MonoBehaviour
     [SerializeField]
     protected Image preview;
     [SerializeField]
+    protected GameObject platePreview;
+    [SerializeField]
     protected string ingredientName;
 
     protected bool plated = false;
@@ -29,6 +31,20 @@ public abstract class Ingredient : MonoBehaviour
     */
     public abstract void Evolve();
 
-    //Combine combines ingredients together, including plates
-    public abstract void Combine(Ingredient toCombine);
+    //Combine combines cards together, including plates
+    public virtual void Combine(Card toCombine)
+    {
+        Ingredient ingToCombine = toCombine.GetIngredient();
+        if(ingToCombine.GetIngredientName().Equals("Plate") && IsPlatable())
+        {
+            PlateIng();
+            ingToCombine.PlateIng();
+        }
+    }
+
+    public virtual void PlateIng()
+    {
+        platePreview.SetActive(true);
+        plated = true;
+    }
 }

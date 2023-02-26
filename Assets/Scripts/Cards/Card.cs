@@ -39,8 +39,7 @@ public class Card : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
 
     public void OnDrop(PointerEventData eventData)
     {
-        Ingredient toCombine = eventData.pointerDrag.GetComponent<Ingredient>();
-        if (toCombine != null)
+        if (eventData.pointerDrag.TryGetComponent(out Card toCombine))
         {
             ingredient.Combine(toCombine);
         }

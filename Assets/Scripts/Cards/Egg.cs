@@ -32,9 +32,4 @@ public class Egg : Ingredient
             platable = true;
         }
     }
-
-    public override void Combine(Ingredient toCombine)
-    {
-
-    }
 }
