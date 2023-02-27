@@ -15,8 +15,8 @@ public class Plate : Ingredient
     private Sprite cleanSprite;
     [SerializeField]
     private Sprite dirtySprite;
-    // Start is called before the first frame update
-    void Start()
+
+    void Awake()
     {
         platable = true;
         cookable = false;

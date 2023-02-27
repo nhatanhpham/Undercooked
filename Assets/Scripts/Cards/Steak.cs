@@ -16,8 +16,7 @@ public class Steak : Ingredient
     [SerializeField]
     private Sprite cookedSprite;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         cookable = false;
         cuttable = true;

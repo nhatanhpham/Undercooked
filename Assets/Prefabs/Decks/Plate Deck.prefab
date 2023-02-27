@@ -139,5 +139,26 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4294967295
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3418017584853172215, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+--- !u!1 &5131961659392800455 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5574301388587511368, guid: d8f3fde12e766ca40a56733e918d81fc, type: 3}
+  m_PrefabInstance: {fileID: 748589728817846415}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4323987059004006713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5131961659392800455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ecc9b8d84fa5594b8e47b256187db1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredient: {fileID: 3541769121865240767, guid: 4c0756411b179604bbb91ffc9b24f6af, type: 3}
+  canvas: {fileID: 0}
+  maxAmount: 3

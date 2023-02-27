@@ -14,8 +14,7 @@ public class Egg : Ingredient
     [SerializeField]
     private Sprite cookedSprite; 
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         cuttable = false;
         cookable = true;

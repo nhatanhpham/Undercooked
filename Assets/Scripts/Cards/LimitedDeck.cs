@@ -6,10 +6,13 @@ using UnityEngine.EventSystems;
 public class LimitedDeck : Deck
 {
     [SerializeField]
-    private List<GameObject> toToggle;
-    [SerializeField]
     private int maxAmount;
     private int currentAmount;
+
+    public void Awake()
+    {
+        currentAmount = maxAmount;
+    }
 
     public override void OnBeginDrag(PointerEventData eventData)
     {
@@ -35,9 +38,6 @@ public class LimitedDeck : Deck
 
     private void ToggleVisibility(bool active)
     {
-        foreach(GameObject gameObject in toToggle)
-        {
-            gameObject.SetActive(active);
-        }
+        this.gameObject.SetActive(active);
     }
 }
