@@ -9,7 +9,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1334622856117761736, guid: 177d01005643d8043984b0361d70835e, type: 3}
       propertyPath: m_text
-      value: Dirty Dishes
+      value: 'Dirty
+
+        Dishes'
       objectReference: {fileID: 0}
     - target: {fileID: 1334622856223199684, guid: 177d01005643d8043984b0361d70835e, type: 3}
       propertyPath: m_Name

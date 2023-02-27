@@ -11,7 +11,7 @@ public class Deck : MonoBehaviour, IBeginDragHandler, IDragHandler
     [SerializeField]
     private GameObject canvas;
 
-    public void OnBeginDrag(PointerEventData eventData)
+    public virtual void OnBeginDrag(PointerEventData eventData)
     {
         GameObject newIngredient = Instantiate(ingredient, transform.position, Quaternion.identity, canvas.transform);
         eventData.pointerDrag = newIngredient;
