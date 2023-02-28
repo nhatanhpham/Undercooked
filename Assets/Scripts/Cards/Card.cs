@@ -48,6 +48,10 @@ public class Card : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
 
     public void SetCountertop(Countertop countertop)
     {
+        if(this.countertop != null)
+        {
+            this.countertop.RemoveIngredient();
+        }
         this.countertop = countertop;
         startPosition = countertop.transform.position;
     }

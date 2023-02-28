@@ -18,10 +18,14 @@ public class Plate : Ingredient
 
     void Awake()
     {
-        platable = true;
         cookable = false;
         cuttable = false;
-        currentEvolution = EVOLUTION.Clean;
+
+        if(currentEvolution != EVOLUTION.Dirty)
+        {
+            platable = true;
+            currentEvolution = EVOLUTION.Clean;
+        }
     }
 
     public override void Evolve()

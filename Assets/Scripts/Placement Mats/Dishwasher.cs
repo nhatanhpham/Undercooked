@@ -5,8 +5,6 @@ using UnityEngine.EventSystems;
 
 public class Dishwasher : Countertop
 {
-    [SerializeField]
-    private LimitedDeck plates;
     public override void OnDrop(PointerEventData pointerEventData)
     {
         Card card = pointerEventData.pointerDrag.GetComponent<Card>();

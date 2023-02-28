@@ -20,6 +20,8 @@ public class Countertop : MonoBehaviour, IDropHandler
 
     public void SetIngredient(Ingredient newIngredient) {ingredient = newIngredient; }
 
+    public void RemoveIngredient() {ingredient = null;}
+
     public void DestroyIngredient() 
     {
         if(ingredient != null)
