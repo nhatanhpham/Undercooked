@@ -13,9 +13,7 @@ public class RecipeManager : MonoBehaviour
     private List<Recipe> ordersRecipes = new();
     private List<GameObject> orders = new();
 
-    [SerializeField]
     private GameObject ordersCanvas;
-    [SerializeField]
     private List<GameObject> orderSlots;
     private int currentSlot;
 
@@ -38,16 +36,15 @@ public class RecipeManager : MonoBehaviour
         return _instance;
     }
 
-    private void Start()
+    public void AddOrders(GameObject ordersCanvas, List<GameObject> orderSlots)
     {
-        for(int i = 0; i < 5; i++)
+        this.ordersCanvas = ordersCanvas;
+        this.orderSlots= orderSlots;
+        currentSlot = 0;
+        for(int i = 0; i < orderSlots.Count; i++)
         {
             AddOrder();
         }
-    }
-
-    private void Update()
-    {
     }
 
     public void AddOrder()
