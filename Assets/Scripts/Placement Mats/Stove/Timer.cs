@@ -13,15 +13,16 @@ public class Timer : MonoBehaviour
     [SerializeField]
     private float defaultTime;
     private float timer;
+    private float startTime;
 
     private bool buttonPressed = false;
 
     // Update is called once per frame
     void Update()
     {
-        if (timer > 0)
+        if (Time.time - startTime < defaultTime)
         {
-            timer -= Time.deltaTime;
+            timer -= Time.time - startTime;
         }
         else
         {
@@ -38,6 +39,7 @@ public class Timer : MonoBehaviour
 
     public void OnButtonPress()
     {
+        startTime = Time.time;
         timer = defaultTime;
         buttonPressed = true;
     }
