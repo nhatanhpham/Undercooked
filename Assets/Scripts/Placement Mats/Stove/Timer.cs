@@ -22,7 +22,7 @@ public class Timer : MonoBehaviour
     {
         if (Time.time - startTime < defaultTime)
         {
-            timer = Time.time - startTime;
+            timer = defaultTime - (Time.time - startTime);
         }
         else
         {

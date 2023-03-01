@@ -8,6 +8,8 @@ public abstract class Ingredient : MonoBehaviour
     [SerializeField]
     protected Image preview;
     [SerializeField]
+    protected Sprite trash;
+    [SerializeField]
     protected GameObject platePreview;
     [SerializeField]
     protected string ingredientName;
@@ -27,7 +29,13 @@ public abstract class Ingredient : MonoBehaviour
     public bool IsCookable() { return cookable;}
     public bool IsCuttable() { return cuttable;}
     public void SetPreviewSprite(Sprite newSprite) { preview.sprite = newSprite;}
-
+    public void SetTrash()
+    {
+        preview.sprite = trash;
+        platable = false;
+        cookable = false;
+        cuttable = false;
+    }
     /*
     Evolve pertains to the stages the ingredient goes through.
     Example for Steak: raw -> chopped -> cooked

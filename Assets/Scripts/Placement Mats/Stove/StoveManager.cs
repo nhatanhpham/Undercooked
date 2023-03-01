@@ -73,6 +73,10 @@ public class StoveManager : MonoBehaviour
         {
             CombineIngredients();
         }
+        else if(indexNotNull != -1)
+        {
+            ingredientSlots[indexNotNull].GetIngredient().SetTrash();
+        }
         else
         {
             indexNotNull = -1;
