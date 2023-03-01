@@ -8,9 +8,10 @@ public class Timer : MonoBehaviour
 {
     [SerializeField]
     private StoveManager stoveManager;
-    public TMP_Text timerText;
-
-    public float defaultTime;
+    [SerializeField]
+    private TMP_Text timerText;
+    [SerializeField]
+    private float defaultTime;
     private float timer;
 
     private bool buttonPressed = false;

@@ -14,10 +14,12 @@ public class Pause : MonoBehaviour
         if(isPaused)
         {
             PauseMenu.SetActive(true);
+            Time.timeScale = 0f;
         }
         else
         {
             PauseMenu.SetActive(false);
+            Time.timeScale = 1f;
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
