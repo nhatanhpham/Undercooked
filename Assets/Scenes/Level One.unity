@@ -408,7 +408,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1334622856117761736, guid: 177d01005643d8043984b0361d70835e, type: 3}
       propertyPath: m_text
-      value: Hand
+      value: '
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 1334622856223199684, guid: 177d01005643d8043984b0361d70835e, type: 3}
       propertyPath: m_Name
@@ -498,6 +500,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1334622856223199687, guid: 177d01005643d8043984b0361d70835e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c7fda9a02b97a114ca23d5ceabae3559, type: 3}
     m_RemovedComponents:
     - {fileID: 1334622856223199686, guid: 177d01005643d8043984b0361d70835e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 177d01005643d8043984b0361d70835e, type: 3}
@@ -546,6 +552,10 @@ PrefabInstance:
       propertyPath: dirtyDishes
       value: 
       objectReference: {fileID: 1075273168}
+    - target: {fileID: 5063457882828286841, guid: 9ec6e4f07d25f4a43b2dbd520d77b104, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: df5b05070467b2048afc63000017eb70, type: 3}
     - target: {fileID: 5063457882828286842, guid: 9ec6e4f07d25f4a43b2dbd520d77b104, type: 3}
       propertyPath: m_Name
       value: Serving Board
@@ -633,6 +643,12 @@ PrefabInstance:
     - target: {fileID: 5063457882828286843, guid: 9ec6e4f07d25f4a43b2dbd520d77b104, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063457882933595254, guid: 9ec6e4f07d25f4a43b2dbd520d77b104, type: 3}
+      propertyPath: m_text
+      value: '
+
+'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec6e4f07d25f4a43b2dbd520d77b104, type: 3}
@@ -1145,6 +1161,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 520666355}
     m_Modifications:
+    - target: {fileID: 2171345032236905532, guid: d439fc0a803ec444ab8b05a92185be08, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8458393512df1ac45ba463c9c83f00fb, type: 3}
     - target: {fileID: 2171345032236905534, guid: d439fc0a803ec444ab8b05a92185be08, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1353,6 +1373,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1939927796}
     m_Modifications:
+    - target: {fileID: 728165559415378285, guid: 5697ff26300598f42925914f8315785c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1cc6f7e56a2195a48bb74c48e476036a, type: 3}
     - target: {fileID: 728165559415378286, guid: 5697ff26300598f42925914f8315785c, type: 3}
       propertyPath: m_Name
       value: Dishwasher
@@ -1440,6 +1464,12 @@ PrefabInstance:
     - target: {fileID: 728165559415378287, guid: 5697ff26300598f42925914f8315785c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 728165559453726306, guid: 5697ff26300598f42925914f8315785c, type: 3}
+      propertyPath: m_text
+      value: '
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 9113921648533708000, guid: 5697ff26300598f42925914f8315785c, type: 3}
       propertyPath: plates
@@ -4222,6 +4252,54 @@ PrefabInstance:
     - target: {fileID: 2870167449865641405, guid: 8ed2354797330184285aa1c7175be4e1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048013848277924072, guid: 8ed2354797330184285aa1c7175be4e1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1834c342e42aa32468ec77e9bba15f6b, type: 3}
+    - target: {fileID: 3048013848277924072, guid: 8ed2354797330184285aa1c7175be4e1, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048013848277924072, guid: 8ed2354797330184285aa1c7175be4e1, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048013848277924072, guid: 8ed2354797330184285aa1c7175be4e1, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593781163068741618, guid: 8ed2354797330184285aa1c7175be4e1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1834c342e42aa32468ec77e9bba15f6b, type: 3}
+    - target: {fileID: 4593781163068741618, guid: 8ed2354797330184285aa1c7175be4e1, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593781163068741618, guid: 8ed2354797330184285aa1c7175be4e1, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593781163068741618, guid: 8ed2354797330184285aa1c7175be4e1, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685268386955735861, guid: 8ed2354797330184285aa1c7175be4e1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1834c342e42aa32468ec77e9bba15f6b, type: 3}
+    - target: {fileID: 4685268386955735861, guid: 8ed2354797330184285aa1c7175be4e1, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685268386955735861, guid: 8ed2354797330184285aa1c7175be4e1, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685268386955735861, guid: 8ed2354797330184285aa1c7175be4e1, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ed2354797330184285aa1c7175be4e1, type: 3}
