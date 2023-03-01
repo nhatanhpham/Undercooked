@@ -22,7 +22,7 @@ public class Timer : MonoBehaviour
     {
         if (Time.time - startTime < defaultTime)
         {
-            timer -= Time.time - startTime;
+            timer = Time.time - startTime;
         }
         else
         {
@@ -42,6 +42,7 @@ public class Timer : MonoBehaviour
         startTime = Time.time;
         timer = defaultTime;
         buttonPressed = true;
+        stoveManager.StartCooking();
     }
 
     void DisplayTime(float currentTimer)

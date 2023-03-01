@@ -3,9 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using System.Linq;
+using System;
 
 public class StoveManager : MonoBehaviour
 {
+    private enum State
+    {
+        Waiting, Cooking, Cooked
+    }
+    private State currentState = State.Waiting;
+
     //These are the 3 areas that you can put ingredients in
     [SerializeField]
     private List<Stove> ingredientSlots;
@@ -14,6 +21,41 @@ public class StoveManager : MonoBehaviour
 
     private Dictionary<string, int> ingredients = new();
     private int indexNotNull = -1;
+
+    public void Update()
+    {
+        if(!HasIngredients() && currentState == State.Cooked)
+        {
+            ToggleLockIngredientSlots(false);
+            currentState = State.Waiting;
+        }
+    }
+
+    private bool HasIngredients()
+    {
+        foreach(Stove slot in ingredientSlots)
+        {
+            if(slot.GetIngredient() != null)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void StartCooking()
+    {
+        currentState = State.Cooking;
+        ToggleLockIngredientSlots(true);
+    }
+
+    private void ToggleLockIngredientSlots(bool locked)
+    {
+        foreach(Stove slot in ingredientSlots)
+        {
+            slot.SetLockedState(locked);
+        }
+    }
 
     public void CheckForCreatedRecipes()
     {
@@ -37,6 +79,7 @@ public class StoveManager : MonoBehaviour
         }
         ClearIngredientSlots(indexNotNull);
         ResetValues();
+        currentState = State.Cooked;
     }
 
     private void AddToDictionary(string ingredientName)
