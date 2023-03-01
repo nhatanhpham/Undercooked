@@ -18,6 +18,7 @@ public class Hand : Countertop
 
     public void ToggleCardVisibility()
     {
+        GameStateManager.GetInstance().SwitchPlayer();
         if(ingredient == null)
         {
             return;

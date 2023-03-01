@@ -50,6 +50,13 @@ public class GameStateManager : MonoBehaviour
         moneyDisplay.text = $"${currentMoney}";
     }
 
+    public void SetPlayerCanvas(GameObject playerOneCanvas, GameObject playerTwoCanvas)
+    {
+        _instance.playerOneCanvas = playerOneCanvas;
+        _instance.playerTwoCanvas = playerTwoCanvas;
+        currentPlayer = Player.One;
+    } 
+
     public Player GetCurrentPlayer()
     {
         return currentPlayer;
