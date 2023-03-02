@@ -40,7 +40,7 @@ public class RecipeManager : MonoBehaviour
     {
         this.ordersCanvas = ordersCanvas;
         this.orderSlots= orderSlots;
-        currentSlot = 0;
+        Reset();
         for(int i = 0; i < orderSlots.Count; i++)
         {
             AddOrder();
@@ -58,6 +58,12 @@ public class RecipeManager : MonoBehaviour
     private Vector3 GetSpawnPosition()
     {
         return orderSlots[currentSlot].transform.position;
+    }
+
+    private void Reset()
+    {
+        currentSlot = 0;
+        orders.Clear();
     }
 
     private void ResetOffset()
