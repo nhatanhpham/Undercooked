@@ -62,8 +62,13 @@ public class RecipeManager : MonoBehaviour
 
     private void Reset()
     {
-        currentSlot = 0;
+        foreach(GameObject order in orders)
+        {
+            Destroy(order);
+        }
         orders.Clear();
+        ordersRecipes.Clear();
+        currentSlot = 0;
     }
 
     private void ResetOffset()
